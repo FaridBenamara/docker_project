@@ -32,17 +32,17 @@ PgAdmin : PgAdmin est accessible à http://localhost:5050 pour la gestion de Pos
 PostgreSQL -> port 5432 
 
 ## Details 
-Spring Boot :
+# Spring Boot :
 Dockerfile  Utilise openjdk:17 comme image de base.
-Build & Run  Construction avec Gradle et exécute le JAR généré.
-Angular :
+# Build & Run  Construction avec Gradle et exécute le JAR généré.
+# Angular :
 Basé sur Node Alpine, construit l'application Angular et la sert avec ng build & serve
-Postgresql:
+# Postgresql:
 Image : postgres:latest
 ou la custom dans database\dockerfile
-utilisation de postgres_data dans le docker-compose pour la persistance des données.
+# utilisation de postgres_data dans le docker-compose pour la persistance des données.
 
-## Variable d'environnement 
+## Variable d'environnement et sécurité
 PSQL:
  ```bash
       POSTGRES_DB: root
@@ -55,5 +55,5 @@ PgAdmin4:
       PGADMIN_DEFAULT_PASSWORD: admin
 ```
 
-Les services communiquent sur un réseau Docker interne, facilitant leur interconnexion sécurisée.
+****Les services communiquent sur un réseau Docker interne, facilitant leur interconnexion sécurisée.****
 
