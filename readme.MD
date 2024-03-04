@@ -26,10 +26,10 @@ git clone https://github.com/FaridBenamara/docker_project.git
 docker-compose up -d
 ```
 ## Accées a services
-Spring Boot : l'application Spring Boot à http://localhost:8080.
-Angular : La page Angular est disponible à http://localhost:4200.
-PgAdmin : PgAdmin est accessible à http://localhost:5050 pour la gestion de PostgreSQL
-PostgreSQL -> port 5432 
+**Spring Boot** : l'application Spring Boot à http://localhost:8080.
+**Angular** : La page Angular est disponible à http://localhost:4200.
+**PgAdmin** : PgAdmin est accessible à http://localhost:5050 pour la gestion de PostgreSQL
+**PostgreSQL** -> port 5432 
 
 ## Details 
 # Spring Boot :
@@ -43,13 +43,13 @@ ou la custom dans database\dockerfile
 # utilisation de postgres_data dans le docker-compose pour la persistance des données.
 
 ## Variable d'environnement et sécurité
-PSQL:
+***PSQL:***
  ```bash
       POSTGRES_DB: root
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: farid
 ```
-PgAdmin4:
+****PgAdmin4:****
  ```bash
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
